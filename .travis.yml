@@ -6,4 +6,4 @@ before_install:
     - docker build -t frontent-test-image -f Dockerfile.dev .
 
 script:
-    - docke run frontent-test-image npm run test -- --coverage 
+    - docker run frontent-test-image npm run test -- --coverage 
