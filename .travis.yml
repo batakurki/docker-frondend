@@ -17,8 +17,6 @@ deploy:
     bucker_path: "docker-front-end"
     on: 
         branch: master
-        AKIAUFWYY5KL3U42SHW4
-        myHtkmuBzJPnqNiGL1Rk3fHqE/4nu7D7+QwfGrIX
     access_key_id: $AWS_ACCESS_KEY
     secret_access_key: 
         secure: "$AWS_SECRET_KEY"
