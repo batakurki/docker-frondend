@@ -7,3 +7,18 @@ before_install:
 
 script:
     - docker run frontent-test-image npm run test -- --coverage 
+
+deploy:
+    provider: elasticbeanstalk
+    region:  "ap-south-1"
+    app: "docker-front-end"
+    env: "DockerFrontEnd-env"
+    bucket_name: elasticbeanstalk-ap-south-1-287143684759
+    bucker_path: "docker-front-end"
+    on: 
+        branch: master
+        AKIAUFWYY5KL3U42SHW4
+        myHtkmuBzJPnqNiGL1Rk3fHqE/4nu7D7+QwfGrIX
+    access_key_id: $AWS_ACCESS_KEY
+    secret_access_key: 
+        secure: "$AWS_SECRET_KEY"
